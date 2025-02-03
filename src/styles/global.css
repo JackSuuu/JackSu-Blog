@@ -1,0 +1,287 @@
+/*
+  Cyberpunk 2077 theme
+ */
+
+:root {
+	--accent: #fcee0a;
+	--accent-dark: #d5c800;
+	--black: 15, 18, 25;
+	--gray: 96, 115, 159;
+	--gray-light: 229, 233, 240;
+	--gray-dark: 34, 41, 57;
+	--box-shadow: 0 2px 6px rgba(252, 238, 10, 25%), 0 8px 24px rgba(252, 238, 10, 33%),
+		0 16px 32px rgba(252, 238, 10, 33%);
+}
+
+@font-face {
+	font-family: 'Atkinson';
+	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Atkinson';
+	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@keyframes glitch {
+	0% {
+		text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+			0.025em 0.04em 0 var(--accent);
+	}
+	15% {
+		text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+			0.025em 0.04em 0 var(--accent);
+	}
+	16% {
+		text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+			-0.05em -0.05em 0 var(--accent);
+	}
+	49% {
+		text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+			-0.05em -0.05em 0 var(--accent);
+	}
+	50% {
+		text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+			0 -0.04em 0 var(--accent);
+	}
+	99% {
+		text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+			0 -0.04em 0 var(--accent);
+	}
+	100% {
+		text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+			-0.04em -0.025em 0 var(--accent);
+	}
+}
+
+body {
+	font-family: 'Atkinson', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: #000;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+main {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+	animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: var(--accent);
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+h1 {
+	font-size: 3.052em;
+	text-shadow: 0 0 10px var(--accent);
+	/* animation: glitch 2s infinite; */
+}
+
+h2 {
+	font-size: 2.441em;
+}
+
+h3 {
+	font-size: 1.953em;
+}
+
+h4 {
+	font-size: 1.563em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+strong,
+b {
+	font-weight: 700;
+	color: var(--accent);
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+a:hover {
+	color: #fff;
+	text-shadow: 0 0 8px var(--accent);
+}
+
+a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: -2px;
+	left: 0;
+	background-color: var(--accent);
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.3s ease;
+}
+
+a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+p {
+	margin-bottom: 1em;
+	font-size: 1em;
+	opacity: 0.9;
+	transition: opacity 0.3s ease;
+}
+
+p:hover {
+	opacity: 1;
+}
+
+.prose p {
+	margin-bottom: 1.5em;
+	font-size: 1em;
+}
+
+textarea {
+	width: 100%;
+	font-size: 16px;
+	background: rgba(var(--black), 0.8);
+	border: 1px solid var(--accent);
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+textarea:focus {
+	box-shadow: 0 0 10px var(--accent);
+	outline: none;
+}
+
+input {
+	font-size: 16px;
+	background: rgba(var(--black), 0.8);
+	border: 1px solid var(--accent);
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+input:focus {
+	box-shadow: 0 0 10px var(--accent);
+	outline: none;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	transition: transform 0.3s ease;
+}
+
+img:hover {
+	transform: scale(1.02);
+}
+
+code {
+	padding: 2px 5px;
+	background-color: rgba(var(--gray-light), 0.1);
+	border-radius: 2px;
+	color: var(--accent);
+}
+
+pre {
+	padding: 1.5em;
+	border-radius: 8px;
+	background: rgba(var(--black), 0.8);
+	border: 1px solid var(--accent);
+	transition: all 0.3s ease;
+}
+
+pre:hover {
+	box-shadow: 0 0 15px rgba(252, 238, 10, 0.3);
+}
+
+pre > code {
+	all: unset;
+	color: #fff;
+}
+
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding: 0 0 0 20px;
+	margin: 0px;
+	font-size: 1.2em;
+	color: var(--accent);
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--accent);
+	opacity: 0.5;
+	margin: 2em 0;
+}
+
+@media (max-width: 720px) {
+	body {
+		font-size: 16px;
+	}
+	main {
+		padding: 1em;
+	}
+	.prose p {
+		font-size: 0.85em;
+	}
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

@@ -1,0 +1,43 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome to Jack Su's Blog!</h1>
+			<p>
+				Welcome to the official <a href="https://jacksuuu.github.io/jacksuuu-portfolio/">Jack's</a> blog. This
+				blog serves as a content sharing and thoughts contemplating platform.
+			</p>
+			<p>
+				I write contents about advance technologies, Machine Learning, AI but not limited to
+				tech, it also may contains on my thoughts / opinions towards anything. It could be my
+				productivity system, for example why Timer makes me procrastinate..., it could be my little
+				philosophical thoughts on the meaning of life is perhaps nothing.
+			</p>
+			<p>Here are a few ideas on why you should be looking at my blog</p>
+			<ul>
+				<li>Knowing about the advance things in today's world and why it helps you become a more powerful human</li>
+				<li>Curious and try to inspect my inner world</code></li>
+				<li>Simply want to get some useful resources out</li>
+				<li>Really want to contemplate on serious and meaningful problem</li>
+			</ul>
+			<p>
+				Have fun! You can also follow my github or other social platform for more...
+			</p>
+			<p>
+				Looking for a cool portfoilo website, check out mine: <a href="https://jacksuuu.github.io/jacksuuu-portfolio/">https://jacksuuu.github.io/jacksuuu-portfolio/</a>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
