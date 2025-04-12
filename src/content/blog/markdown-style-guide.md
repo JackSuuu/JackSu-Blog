@@ -1,7 +1,7 @@
 ---
 title: 'My First and very first time'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 2024'
+pubDate: 'Jun 19 9999'
 heroImage: '/very-first-time.jpeg'
 ---
 
