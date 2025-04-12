@@ -226,13 +226,13 @@ hr {
 
 @media (max-width: 720px) {
 	body {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	main {
 		padding: 1em;
 	}
 	.prose p {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 }
 
