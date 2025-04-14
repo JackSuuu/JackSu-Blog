@@ -1,17 +1,79 @@
 ---
-title: 'Third post'
+title: '简单但不简陋的日程管理：Things3 和 Apple Calendar'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog-placeholder-2.jpg'
-tags: ['']
+pubDate: 'Apr 14 2025'
+heroImage: '/things3-banner.jpg'
+tags: ['Productivity', 'Personal Growth']
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**Article Structure**
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+1. **why we need a to-do management system**
+2. **what is the benefit of using a to-do management system**
+3. **how to really implement a useful and not make it become a chore**
+    1. create your main to-do application
+    2. difference between task and schedule
+    3. my choice and how I use it
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## **引子**
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+代办系统在我们生活中早已存在的系统，比如在冰箱上贴便利贴，或者在纸质日历上记录重要日子。这些简单而有效的方式帮助我们记住需要做的事情。
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## **为什么我们需要代办系统**
+
+代办系统的核心目标是减轻我们日常生活中的思考负担，通过记录事务，达到以下两个目标：
+
+1. 避免遗忘具体要做的事情及其时间。
+2. 取得成功完成任务的结果。
+
+代办系统的最终目的是使生活更便利，将工具智能化和系统化，最终帮助我们更好地掌控生活和每一天
+
+## 待**办系统的好处**
+
+代办系统的好处数不胜数，当然这也因不同种类的系统模式和结构所挂钩。上面提到，代办系统的目的是记录并完成，这看似是一个非常简单的行为，有人可能会说，如果只是那么简单的话，我为什么要花费心思来创建一个新的系统吗，这不是白费功夫吗。
+
+从大的方面来说，探索新的事物走出原本的舒适圈是每一个人都应该尝试的，具体来讲，系统的最大好处不仅仅是其功能，更在于自动化。自动化意味着我只需要将事情写下来，并忘记它就好，系统将自动帮我们处理。这个道理与编写程序非常类似，编程的核心包含着循环，而循环代表着重复有规律的事情，生活中也是一样的，要是想要关注于有意义的事情并且沉浸于此，专心是尤其重要的，专心的一个重要指标就是心无旁骛，如果心中一直挂有着自己要做什么，下一件事情是什么的话，反而会陷入一个死循环，我们最珍贵的资源，时间就被浪费了。
+
+**专注是成功的关键，代办系统帮助我们牢牢锁住灵感，使我们能够更专注于任务，而不是被琐碎的事务困扰。**
+
+## **如何创建一个「有效」的待办系统**
+
+在电子时代的今天，我主要关注的是电子化的代办系统。基本上可以分为两个大类，综合型和代办型。综合型像是将代办和日历相结合的 Fantastical，Sorted3 等工具将代办和日历结合在一起。
+
+在这一类型的工具里，你可以直接在应用内创建日程和任务，确定开始时间，持续时间等基本操作，Fantastical 还附加有订阅公共频道，Sorted3 可以直接对单个任务进行富文本操作等附加功能。
+
+而另一种类型则是只拥有纯粹的代办功能的应用，主要代表应用是 Things 和 Todoist，这一类型的应用更加专注于添加任务而不是添加日程。
+
+注意，这两者看似非常相似，可是在我个人的日程管理体验下，两者所拥有的性质完全不一样，任务代表了具体要做的事情，例如今天早上8点钟到11点我要完成一组有氧训练，训练的项目包含了10km长跑，5km间歇跑；任务是具体的项目，而日程这更像是一个时间块，块时间内所要完成的事情称之为日程，如8点到11点。理解了主流代办软件和日程和任务的区别之后，我们就可以开始创建一个自己定制的系统了，选择任何一个软件差别其实更加在于你的主观偏好。
+
+![Things sceenshot](/Screenshot_2024-01-09_at_11.50.01.png)
+
+我选择的软件是 Things 和 Apple calendar，这两个软件可以很好的融入我的生活，并且符合我个人个性还有偏好。当然不同的软件利弊共存，如何权益是需要自己抉择的。Things3 作为我使用的第二款代办软件，其价格确实是一个门槛，凑齐全套 Things3 的价格实则不便宜，而其实现的功能确极其简单。加入任务，并且打勾已完成任务，这是一个基本代办应用的功能，Things3 很好的实现了这一点，除此之外，things 看似简单，但是里面内涵的核心却十分强大。Things3 作为一个 To-do List 应用，其价格确实偏高，但在深入使用之后，我会说这个价格虽然不便宜，但是物有所值。
+
+为什么我会用物有所值来评价，**一个重要的原因就是 Things 在优雅的 UI 设计下，隐藏着其设计的逻辑和思考。**首先，Things 为创建任务这样的主要代办操作创建了多个输入途径，最简单的就是快捷键 control + space ，别看这只是一个简单的快捷键，需要提及的是这个快捷键是全局最上层的，其次Things 内部也涵盖了两种可以快速添加的快捷键，space 和 enter。这意味着何时何地，任何使用场景下，我都可以快速的添加任务，以实现我们这个系统最重要的一步，「**添加」。**没有这第一步，后面一切都可以不用继续了，因为我们知道，做任务是过程，完成任务是输出，可是没有输入，何来输出和过程。
+
+输入之后，在外面开始任务之前，需要的是管理我们输入的数据，Things 默认的输入会添加到收件箱 📥 ，这是一个主意聚集任务的地方，任务可以被分配到 1.今天 2.今晚 3.某日 4.计划，这四种目的地涵盖了我们想要完成任务的不同时间。Things 中可以自定义创建区域 (Area)，区域 (Area) 是一个自定义类型的板块 (block)，例如我将一个 区域 (Area) 定义成了工作 (work)，在工作 (work)里面我就可以添加不同种类的项目 (Project)，例如个人简陋 (personal statement)，这样的分层搭配使得在管理不同任务的时候井井有条。
+
+![Apple calendar sceenshot](/Screenshot_2024-01-09_at_11.51.43.png)
+
+值得一提的是，我花了大量的篇幅描述 Things，为什么我还将 Apple calendar 放在其中，这就要设计到时间管理了，Things 虽然可以有效的实现任务管理， 但是除了给予任务一个提醒时间之外，我们并不能有效的知道什么时候做这个任务，做多长时间，其实 Apple calendar 的功能非常简单，其功能就是实现日程的规划，构建一个 block 出来，在前面知道了日程和任务区别之后，就对我的搭配可以有一个直观的理解了吧，我使用的另一个原因是 calendar 的视图可以清晰的查看各种日程，并且很快做出调整，此外，Apple calendar 并无其他作用，这虽然听上去更像是锦上添花，却又必不可少。
+
+## 「精力管理」比时间管理更加重要
+
+很长一顿时间里，我之前一直纠结于时间管理的各种方法⌚️，直到自己一个人独居后，我却更加理解任务管理相较于时间管理的重要性‼️，在接下来的段落中，我会讨论什么是时间管理，什么是任务管理，并且比较两者，给出我的观点，和调理方式。
+
+写下这一段的初衷是我失败的管理日程，使得我过得很累，每天都想要完成暴量的任务是几乎不可能的。每天的时间只有24小时，不可能完全极限利用24小时做出不可能实现的事情，所以任务分配是比时间分配更重要的概念。
+
+时间管理大体上是对时间的分配，在一个时间段里我具体要做什么事情，一天有24个小时，我习惯于将此分配为24个时间节点，每个节点都有一定的事情被分配。
+
+**重要是和自己和解，之前的我一直很固执的坚持极简概念，直到现在我也一直相信着，可是这个理念发生了改变，并不是一定要将一切事物割舍才可以去追求而是要合理的分配任务，专注于重要的事情。**重要的事情结束后的那段时间，我 称之为之于「颓废空间」，每个人都有颓废不想做事情的时候，那个时候就尽情放松吧，释放自己，弹性获取创造力，也就是这个念头，让我写下这篇文章。
+
+关于时间管理，我之前一直将时间割裂成几个固定的时间段，我告诉自己在第一段到第二段时间里我固定要干什么事情，这样的管理方式本没有错误，将大致时间段落切分是对任务安排的基本操作，**可是我忘记了了我们内心的本质，恐惧，对大型复杂任务的恐惧会成为阻挡我们前行开始做事情的巨大阻力，如果只是简单的告诉自己要做什么类型的任务，而不是具体要做任务的哪个版块，自己的大脑会在此处迷失，对继续做下去这件事情产生无比巨大的恐惧感而丧失真正在做事情的时间，反而使得所谓时间管理失去本身也应有的目的。**
+
+相比较于时间，对任务的管控会更加的重要和值得深思。什么样类型的任务是最重要的，优先完成的，对我们人生有帮助的，对实现想实现的目标重要的，这一切都是需要去思考规划的，这个过程看上去很繁琐，但是实际使用后其实并没有增加很多的麻烦，反而让我对每天的任务量有了个大概的了解，不会在每完成的边缘徘徊。因此，我将任务分为两个类别，🌟日程亮点 (daily highlight)，和其他，这让我每天可以聚焦于任务的优先级，完成最重要任务，然后以任务数量来调配时间。**不是死板的告诉自己我要做什么而是告诉自己什么最重要。**
+
+## 让管理任务变成习惯
+
+最后，如何避免代办系统的使用成为一项琐事？**答案很简单，持续使用，让其成为一种习惯**。刚开始可能需要适应期，但随着时间的推移，在这一段时间里，想到什么需要做的任务和事情，就 control + space 记录下来，久而久之，你不再需要思考「我要做什么」，代办系统变成了自然而然的一部分生活。
+
+总的来说，代办系统的使用并不是琐事，而是通过记录、自动化和专注，让生活更简单、更有目的。通过选择适合自己的工具，建立有效的代办系统，我们可以更好地掌控时间和任务，使生活更加轻松。
