@@ -1,8 +1,8 @@
 ---
 title: 'My First and very first time'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 9999'
-heroImage: '/very-first-time.png'
+pubDate: 'Sep 9 9999'
+heroImage: '/my_first_new.png'
 tags: ['personal record', 'life notes', 'true thoughts']
 ---
 
@@ -28,4 +28,4 @@ I believe every day is my first and very first time to learn something new, to e
 
 In the first and very first time, I might become a programmer, even I personally prefer the word Software Engineer.
 
-Jack Su - Written in 2025, Apr
+Jack Su - Written in 2025, April
