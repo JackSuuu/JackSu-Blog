@@ -29,3 +29,5 @@ I believe every day is my first and very first time to learn something new, to e
 In the first and very first time, I might become a programmer, even I personally prefer the word Software Engineer.
 
 Jack Su - Written in 2025, April
+
+> The banner image was taken by me when I participating my first Hackthon till night 1:49.
