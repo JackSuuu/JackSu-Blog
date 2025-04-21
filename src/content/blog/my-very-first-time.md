@@ -1,5 +1,5 @@
 ---
-title: 'My First and very first time'
+title: 'My First and Very First Time'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Sep 9 9999'
 heroImage: '/my_first_new.png'
