@@ -130,16 +130,6 @@ p {
 	line-height: 1.6;
 }
 
-:lang(zh), 
-:lang(zh-CN), 
-:lang(zh-TW) {
-	font-size: 1.03em;
-}
-
-/* Alternative using specific character ranges */
-p:not(:lang(zh)):not(:lang(zh-CN)):not(:lang(zh-TW)):not(lang(en)) {
-	font-size: 1.03em;
-}
 
 .prose p {
 	font-size: 1.1em;
@@ -243,8 +233,20 @@ hr {
 	main {
 		padding: 1em;
 	}
+
+	p {
+		font-size: 1.05em;
+	}
+
+	li {
+		font-size: 1.05em;
+	}
+
 	.prose p {
-		font-size: 1.1em;
+		font-size: 1.05em;
+	}
+	.prose li {
+		font-size: 1.05em;
 	}
 }
 
