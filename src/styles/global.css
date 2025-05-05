@@ -80,6 +80,14 @@ h6 {
 	letter-spacing: -0.02em;
 	font-weight: 500;
 	font-family: Georgia, serif;
+}
+
+.prose h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-top: 1.5em;
 }
 
