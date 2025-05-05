@@ -104,6 +104,7 @@ h5 {
 
 li {
 	color: black;
+	font-size: 1.1em;
 }
 
 strong,
@@ -127,6 +128,17 @@ p {
 	font-size: 1.1em;
 	color: var(--text-light);
 	line-height: 1.6;
+}
+
+:lang(zh), 
+:lang(zh-CN), 
+:lang(zh-TW) {
+	font-size: 1.03em;
+}
+
+/* Alternative using specific character ranges */
+p:not(:lang(zh)):not(:lang(zh-CN)):not(:lang(zh-TW)):not(lang(en)) {
+	font-size: 1.03em;
 }
 
 .prose p {
@@ -213,7 +225,7 @@ blockquote {
 	border-left: 2px solid var(--border);
 	padding: 0 0 0 20px;
 	margin: 2em 0;
-	font-size: 1.2em;
+	font-size: 1.08em;
 	color: var(--text-light);
 	font-style: italic;
 }
