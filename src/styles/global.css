@@ -1,6 +1,7 @@
 /*
   Minimalist theme with Georgia and noise effect
  */
+ @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
  :root {
 	--text: #1d1d1f;
@@ -215,8 +216,12 @@ pre {
 
 pre > code {
 	all: unset;
-	font-family: ui-monospace, monospace;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 0.9em;
 	color: var(--text);
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 blockquote {
