@@ -6,8 +6,6 @@ heroImage: '/BFS-concept.png'
 tags: ['Algorithm', 'Graph Theory', 'Notes']
 ---
 
-> diagram credits to Guru99.com
-
 广度优先搜索( Breath First Search) 是一种图遍历算法，用于从给定的起始节点开始，逐层地探索图或树的结构，以找到目标节点或满足特定条件的节点。在广度优先搜索中，我们需要按照节点的距离顺序进行扩展和探索。
 
 **目的:** 找到两个位置之间的「最短」距离（不是最快，是段数最少）。
