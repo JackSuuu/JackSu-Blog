@@ -15,9 +15,18 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				width: calc(100% - 2em);
+				width: 100%;
 				max-width: 100%;
-				margin: 0;
+				margin: 0 auto;
+				padding: 5em 1em 3em 1em;
+				box-sizing: border-box;
+				overflow-x: hidden;
+			}
+			article {
+				width: 100%;
+				max-width: 760px;
+				margin: 0 auto;
+				box-sizing: border-box;
 			}
 			.hero-image {
 				width: 100%;
@@ -27,13 +36,16 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
+				max-width: 100%;
+				height: auto;
 			}
 			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
+				width: 100%;
+				max-width: 720px;
+				margin: 0 auto;
 				padding: 1em;
-				color: #fff;
+				color: var(--text-light);
+				box-sizing: border-box;
 			}
 			.title {
 				margin-bottom: 1em;
@@ -43,28 +55,38 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				color: var(--text);
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: #fff;
+				color: var(--text-light);
 			}
 			.last-updated-on {
 				font-style: italic;
-				color: #fff;
+				color: var(--text-light);
 			}
 			.tags {
                 margin-top: 1em;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 0.5em;
+				justify-content: center;
             }
             .tag {
-                background: var(--accent-light);
-                color: #fff;
+                background: var(--c8);
+                color: var(--c0);
                 padding: 0.3em 0.6em;
                 border-radius: 12px;
                 font-size: 0.9em;
             }
+			@media (max-width: 720px) {
+				main {
+					padding: 5em 1.25em 1em 1.25em;
+				}
+				.prose {
+					padding: 0.5em;
+				}
+			}
 		</style>
 	</head>
 

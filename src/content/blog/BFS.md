@@ -19,7 +19,7 @@ tags: ['Algorithm', 'Graph Theory', 'Notes']
 
 以寻找关系最近的朋友为例，朋友是一度关系，朋友的朋友是二度关系，在你看来，一度胜过二度。因此，你应该先从一度关系开始搜查，范围逐渐往外延伸。
 
-[[哈希表 - Hash Table]]可以用来表示图关系。在以上例子中，哈希表可以用来映射节点到朋友。在以下代码的实施中，key是`“you”`，而value是一个包含所有最近朋友的数组 `["alice", "bob", "claire"]`。
+[[哈希表 - Hash Table]]可以用来表示图关系。在以上例子中，哈希表可以用来映射节点到朋友。在以下代码的实施中，key是 `“you”`，而value是一个包含所有最近朋友的数组 `["alice", "bob", "claire"]`。1
 
 ![bfs drawing illustration](/BFS-draw.jpeg)
 

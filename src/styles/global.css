@@ -82,7 +82,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--text);
-	font-size: 1.1em;
+	font-size: 0.98em;
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
@@ -114,7 +114,7 @@ main {
 	width: 760px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 5em 1em 3em 1em;
 	animation: fadeIn 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 	position: relative;
 	background: var(--background);
@@ -255,38 +255,37 @@ img {
 
 img:hover {
 	filter: grayscale(0%);
-	transform: translateY(-4px);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 code {
 	padding: 2px 6px;
-	background-color: var(--background-alt);
-	border: 1px solid var(--border);
+	background-color: var(--c10);
+	border: 1px solid var(--c9);
 	border-radius: 4px;
 	font-family: 'JetBrains Mono', monospace;
-	font-size: 0.9em;
-	color: var(--text);
+	font-size: 0.85em;
+	color: var(--c0);
 }
 
 pre {
 	padding: 1.5em;
 	border-radius: var(--radius);
-	background: var(--background-alt);
-	border: 1px solid var(--border);
+	background: var(--c10);
+	border: 1px solid var(--c9);
 	overflow-x: auto;
 	transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 pre:hover {
-	border-color: var(--text);
+	border-color: var(--c7);
 }
 
 pre > code {
 	all: unset;
 	font-family: 'JetBrains Mono', monospace;
-	font-size: 0.9em;
-	color: var(--text-light);
+	font-size: 0.85em;
+	color: var(--c0);
 }
 
 blockquote {
@@ -321,7 +320,6 @@ hr {
 }
 
 .card:hover, article:hover {
-	transform: translateY(-4px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	border-color: var(--text);
 }
@@ -383,7 +381,8 @@ button:hover, .btn:hover {
 		font-size: 14px;
 	}
 	main {
-		padding: 1em;
+		padding: 5em 1.25em 1em 1.25em;
+		box-sizing: border-box;
 	}
 	
 	h1 {
@@ -406,8 +405,9 @@ button:hover, .btn:hover {
 
 @media (max-width: 500px) {
 	main {
-		padding: 0.5em;
+		padding: 5em 1.25em 1em 1.25em;
 		max-width: 100%;
+		box-sizing: border-box;
 	}
 	
 	h1 {
@@ -416,6 +416,7 @@ button:hover, .btn:hover {
 	
 	.card, article {
 		padding: 1rem;
+		margin: 0 auto;
 	}
 }
 
