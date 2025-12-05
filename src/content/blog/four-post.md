@@ -2,7 +2,7 @@
 title: '说出来 Writing Methodology'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 17 2025'
-heroImage: '/ChatGPT Image Apr 17, 2025 at 02_02_54 PM.png'
+heroImage: '/writing_pen.jpg'
 tags: ['productivity', 'self-improvement', 'reflections']
 ---
 
