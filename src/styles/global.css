@@ -82,7 +82,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--text);
-	font-size: 0.98em;
+	font-size: 1.05em;
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
