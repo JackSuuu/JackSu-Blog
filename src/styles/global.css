@@ -295,13 +295,8 @@ blockquote {
 	font-size: 1em;
 	color: var(--text-light);
 	font-style: italic;
-	background: var(--background-alt);
 	border-radius: 0 var(--radius) var(--radius) 0;
 	transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-blockquote:hover {
-	transform: translateX(4px);
 }
 
 hr {
