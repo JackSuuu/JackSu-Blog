@@ -82,7 +82,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--text);
-	font-size: 1.1em;
+	font-size: 1.05em;
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
@@ -356,10 +356,6 @@ button:hover, .btn:hover {
 }
 
 @media (max-width: 720px) {
-	body {
-		font-size: 1em;
-	}
-	
 	p {
 		font-size: 16px;
 	}
