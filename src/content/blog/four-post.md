@@ -15,7 +15,7 @@ tags: ['productivity', 'self-improvement', 'reflections']
 3. 开始写，不要在意质量，打下来是最重要的
 4. 用 AI 整理语法和词藻
 
-![pen and paper](/ChatGPT%20Image%20Apr%2017,%202025%20at%2002_02_54%20PM.png)
+![pen and paper](/writing_pen.jpg)
 
 **余华**（中国作家）：
 
