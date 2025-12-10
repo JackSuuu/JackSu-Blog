@@ -1,7 +1,7 @@
 ---
 title: '每天被猫头鹰催打卡一年，我变成了谁？'
 description: 'My duolingo journey'
-pubDate: 'Dec 10 2025'
+pubDate: 'Dec 9 2025'
 heroImage: '/duolingo.jpeg'
 tags: ['productivity', 'self-improvement', 'reflections']
 ---
