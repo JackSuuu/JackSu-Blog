@@ -236,12 +236,12 @@ th, td {
 }
 
 th {
-	background: var(--background-alt);
+	background: #f4f4f4c7;
 	font-weight: 600;
 }
 
 tr:hover td {
-	background: var(--background-alt);
+	background: #f4f4f4c7;
 }
 
 img {
