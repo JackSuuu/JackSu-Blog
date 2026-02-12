@@ -4,6 +4,7 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 14 2025'
 heroImage: '/things3-banner.jpg'
 tags: ['Productivity', 'Personal Growth']
+category: 'Productivity'
 ---
 
 **Article Structure**

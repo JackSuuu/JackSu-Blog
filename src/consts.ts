@@ -3,3 +3,13 @@
 
 export const SITE_TITLE = 'Jack Su Official™';
 export const SITE_DESCRIPTION = 'A futuristic blog about technology and the digital frontier';
+
+export const CATEGORIES = [
+	'Algorithms',
+	'Life',
+	'Productivity',
+	'Academic',
+	'Technology'
+] as const;
+
+export type Category = typeof CATEGORIES[number];

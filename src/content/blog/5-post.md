@@ -4,6 +4,7 @@ description: 'My duolingo journey'
 pubDate: 'Dec 9 2025'
 heroImage: '/duolingo.jpeg'
 tags: ['productivity', 'self-improvement', 'reflections']
+category: 'Life'
 ---
 
 ![duolingo.jpeg](/duolingo.jpeg)

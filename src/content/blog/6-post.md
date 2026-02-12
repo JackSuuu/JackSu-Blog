@@ -4,6 +4,7 @@ description: 'Why we need to construct a second brain'
 pubDate: 'Dec 10 2025'
 heroImage: '/brain.webp'
 tags: ['productivity', 'self-improvement', 'reflections']
+category: 'Productivity'
 ---
 
 ## **引言**

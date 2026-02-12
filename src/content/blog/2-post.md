@@ -4,6 +4,7 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 13 2025'
 heroImage: '/second_post.webp'
 tags: ['algorithms', 'reflections']
+category: 'Algorithms'
 ---
 
 The fact that multiple programming languages is pretty similar inspired me how to actually think as a really good programmer or even designer.

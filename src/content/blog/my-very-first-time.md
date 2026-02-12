@@ -4,6 +4,7 @@ description: 'Here is a sample of some basic Markdown syntax that can be used wh
 pubDate: 'May 6 2025'
 heroImage: '/my_first_new.png'
 tags: ['personal record', 'life notes', 'true thoughts']
+category: 'Life'
 ---
 
 It is maybe a bit cliche that saying myself as a programmer has been a not good title for me for a long time, I hate the stereotype related to it, thick glasses, grid t-shirts, it feels like a prison that restricts me and let my thoughts to fly around the universe.

@@ -4,6 +4,7 @@ description: 'Why we need to construct a second brain'
 pubDate: 'Dec 11 2025'
 heroImage: '/unitree-robot.jpg'
 tags: ['robotics', 'operating-system', 'concepts']
+category: 'Technology'
 ---
 
 在计算机科学的学习和工程实践中，我们常常被各种复杂的术语包围：Paging、Attention、ROS2、RTOS…… 但当我们剥去这些技术的层层外壳，会发现它们底层的逻辑惊人地相似。

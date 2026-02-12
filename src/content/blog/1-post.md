@@ -4,6 +4,7 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 12 2025'
 heroImage: '/running200km.jpg'
 tags: ['running', 'self-improvement', 'reflections']
+category: 'Life'
 ---
 
 **Introduction:** Hello, this is Jack Su, and this article is about some of the thoughts I've had in the past three years while running 2000 kilometres.

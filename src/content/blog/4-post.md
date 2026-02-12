@@ -4,6 +4,7 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 17 2025'
 heroImage: '/writing_pen.jpg'
 tags: ['productivity', 'self-improvement', 'reflections']
+category: 'Productivity'
 ---
 
 写作过程中，我认为环境，语法，如何表达，**写得好不好不重要，最重要的是能够把自己心里真实的想法说出来，不论说的幼稚还是有深度，只要将可视化的文字打出来，就在我们心里建立了某种心灵感应**，让我们的大脑主动去思考世界，思考很多值得去思考的问题，不断地自我强化大脑的学习曲线与对事物的理解能力。
