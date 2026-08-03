@@ -1,13 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags, category } = Astro.props;
 ---
 
 <html lang="en">
@@ -15,113 +14,170 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				width: 100%;
-				max-width: 100%;
+				width: 680px;
+				max-width: calc(100% - 2em);
 				margin: 0 auto;
-				padding: 5em 1em 3em 1em;
-				box-sizing: border-box;
-				overflow-x: hidden;
+				padding: 3em 1em 5em 1em;
 			}
-			article {
-				width: 100%;
-				max-width: 760px;
-				margin: 30px auto 0 auto;
-				box-sizing: border-box;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-				max-width: 100%;
-				height: auto;
-			}
-			.prose {
-				width: 100%;
-				max-width: 720px;
-				margin: 0 auto;
-				padding: 1em;
+
+			.back-link {
+				display: inline-block;
+				font-size: 0.85em;
 				color: var(--text-light);
-				box-sizing: border-box;
+				opacity: 0.6;
+				margin-bottom: 2.5em;
+				text-decoration: none;
+				transition: opacity 0.2s ease;
 			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
+
+			.back-link:hover {
+				opacity: 1;
 				color: var(--text);
 			}
-			.date {
-				margin-bottom: 0.5em;
-				color: var(--text-light);
+
+			.post-header {
+				margin-bottom: 2em;
+				padding-bottom: 1.5em;
+				border-bottom: 1px solid var(--border);
 			}
-			.last-updated-on {
+
+			.post-meta {
+				display: flex;
+				align-items: center;
+				gap: 0.6em;
+				margin-bottom: 0.8em;
+			}
+
+			.post-category {
+				font-size: 0.75em;
+				font-weight: 600;
+				color: var(--text-light);
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				opacity: 0.7;
+			}
+
+			.meta-sep {
+				color: var(--border);
+				font-size: 0.75em;
+			}
+
+			.post-date {
+				font-size: 0.78em;
+				color: var(--text-light);
+				opacity: 0.55;
+			}
+
+			.post-title {
+				font-size: 2em;
+				font-weight: 700;
+				line-height: 1.2;
+				letter-spacing: -0.04em;
+				color: var(--text);
+				margin: 0 0 0.5em 0;
+			}
+
+			.post-description {
+				font-size: 1em;
+				color: var(--text-light);
+				line-height: 1.6;
+				margin: 0;
+				opacity: 0.7;
+			}
+
+			.last-updated {
+				font-size: 0.78em;
 				font-style: italic;
 				color: var(--text-light);
+				opacity: 0.5;
+				margin-top: 0.4em;
 			}
-			.tags {
-                margin-top: 1em;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.5em;
-				justify-content: center;
-            }
-            .tag {
-                background: var(--c8);
-                color: var(--c0);
-                padding: 0.3em 0.6em;
-                border-radius: 12px;
-                font-size: 0.9em;
-            }
+
+			.hero-image {
+				margin-bottom: 2em;
+			}
+
+			.hero-image img {
+				width: 100%;
+				height: auto;
+				border-radius: 6px;
+				border: none;
+				display: block;
+			}
+
+			.prose {
+				color: var(--text-light);
+				line-height: 1.75;
+				font-size: 1.02em;
+			}
+
+			.post-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				margin-top: 3em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--border);
+			}
+
+			.post-tag {
+				font-size: 0.78em;
+				color: var(--text-light);
+				opacity: 0.55;
+			}
+
+			.post-tag::before {
+				content: "·";
+				margin-right: 0.4em;
+			}
+
 			@media (max-width: 720px) {
 				main {
-					padding: 5em 1.25em 1em 1.25em;
+					padding: 2em 1.25em 4em 1.25em;
 				}
-				.prose {
-					padding: 0.5em;
+
+				.post-title {
+					font-size: 1.5em;
 				}
 			}
 		</style>
 	</head>
 
 	<body>
-		<Header />
 		<main>
-			<article>
+			<a class="back-link" href="/">← All posts</a>
+
+			{heroImage && (
 				<div class="hero-image">
-					{heroImage && <img width={680} height={510} src={heroImage} alt="" />}
+					<img src={heroImage} alt="" />
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-					{tags && (
-                        <div class="tags">
-                            {tags.map((tag) => (
-                                <span class="tag">{tag}</span>
-                            ))}
-                        </div>
-                    )}
+			)}
+
+			<div class="post-header">
+				<div class="post-meta">
+					{category && <span class="post-category">{category}</span>}
+					{category && <span class="meta-sep">·</span>}
+					<span class="post-date"><FormattedDate date={pubDate} /></span>
+					{updatedDate && (
+						<span class="meta-sep">·</span>
+						<span class="last-updated">Updated <FormattedDate date={updatedDate} /></span>
+					)}
 				</div>
-			</article>
+				<h1 class="post-title">{title}</h1>
+				{description && <p class="post-description">{description}</p>}
+			</div>
+
+			<div class="prose">
+				<slot />
+			</div>
+
+			{tags && tags.length > 0 && (
+				<div class="post-tags">
+					{tags.map((tag) => (
+						<span class="post-tag">{tag}</span>
+					))}
+				</div>
+			)}
 		</main>
 		<Footer />
 	</body>
