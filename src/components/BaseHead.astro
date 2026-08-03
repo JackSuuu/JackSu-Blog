@@ -56,3 +56,38 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
     animation: none;
   }
 </style>
+
+<script>
+  // Chromium browsers (Arc/Chrome) don't reliably trigger native swipe-back.
+  // Detect a horizontal-dominant rightward trackpad swipe and navigate back.
+  // Registered once; survives Astro SPA navigations.
+  if (!(window as any).__swipeBackInit) {
+    (window as any).__swipeBackInit = true;
+
+    let accumX = 0;
+    let resetTimer: ReturnType<typeof setTimeout> | null = null;
+    let locked = false;
+
+    window.addEventListener(
+      'wheel',
+      (e) => {
+        if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return; // vertical scroll
+        if (locked) return;
+
+        accumX += e.deltaX;
+
+        if (resetTimer) clearTimeout(resetTimer);
+        resetTimer = setTimeout(() => { accumX = 0; }, 100);
+
+        // deltaX negative = swipe right (go back)
+        if (accumX < -80 && history.length > 1) {
+          locked = true;
+          accumX = 0;
+          history.back();
+          setTimeout(() => { locked = false; }, 600);
+        }
+      },
+      { passive: true }
+    );
+  }
+</script>
