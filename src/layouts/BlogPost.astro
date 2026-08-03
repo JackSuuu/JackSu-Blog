@@ -179,30 +179,5 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 			)}
 		</main>
 		<Footer />
-
-		<script>
-			// Chromium (Arc/Chrome) doesn't support Safari's rubber-band back gesture.
-			// Detect a fast rightward trackpad swipe and trigger history.back().
-			let wheelXTotal = 0;
-			let wheelTimer: ReturnType<typeof setTimeout> | null = null;
-
-			window.addEventListener('wheel', (e) => {
-				// Only care about horizontal-dominant swipes
-				if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
-
-				wheelXTotal += e.deltaX;
-
-				if (wheelTimer) clearTimeout(wheelTimer);
-				wheelTimer = setTimeout(() => {
-					wheelXTotal = 0;
-				}, 80);
-
-				// Swipe right (negative deltaX in Chrome) with enough momentum
-				if (wheelXTotal < -120 && history.length > 1) {
-					wheelXTotal = 0;
-					history.back();
-				}
-			}, { passive: true });
-		</script>
 	</body>
 </html>
