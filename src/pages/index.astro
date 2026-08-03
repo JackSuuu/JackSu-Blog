@@ -19,28 +19,91 @@ const posts = (await getCollection('blog')).sort(
 				width: 680px;
 				max-width: calc(100% - 2em);
 				margin: 0 auto;
-				padding: 3em 1em 4em 1em;
+				padding: 4em 1em 5em 1em;
 			}
 
-			.page-header {
-				border-bottom: 1px solid var(--border);
-				padding-bottom: 1.5em;
-				margin-bottom: 2em;
+			/* ---- Author brand header ---- */
+			.author {
+				display: flex;
+				align-items: center;
+				gap: 1.1em;
+				margin-bottom: 2.5em;
 			}
 
-			.page-title {
-				font-size: 1.1em;
+			.author-avatar {
+				flex-shrink: 0;
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: var(--text);
+				color: var(--background);
+				font-family: var(--font-sans);
 				font-weight: 600;
-				color: var(--text);
-				margin: 0 0 0.3em 0;
-				letter-spacing: -0.01em;
+				font-size: 1.5em;
+				letter-spacing: -0.02em;
+				border: none;
+				overflow: hidden;
 			}
 
-			.page-subtitle {
+			.author-avatar img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border: none;
+				border-radius: 0;
+				filter: none;
+			}
+
+			.author-info {
+				min-width: 0;
+			}
+
+			.author-name {
+				font-family: var(--font-serif);
+				font-size: 1.5em;
+				font-weight: 700;
+				line-height: 1.1;
+				letter-spacing: -0.03em;
+				margin: 0 0 0.25em 0;
+				color: var(--text);
+			}
+
+			.author-bio {
+				font-family: var(--font-sans);
 				font-size: 0.9em;
 				color: var(--text-light);
-				margin: 0;
+				line-height: 1.5;
+				margin: 0 0 0.5em 0;
+				opacity: 0.8;
+			}
+
+			.author-social {
+				display: flex;
+				gap: 1em;
+			}
+
+			.author-social a {
+				font-family: var(--font-sans);
+				font-size: 0.8em;
+				font-weight: 500;
+				color: var(--text-light);
 				opacity: 0.7;
+				text-decoration: none;
+			}
+
+			.author-social a:hover {
+				opacity: 1;
+				color: var(--text);
+				text-decoration: underline;
+			}
+
+			.section-divider {
+				border: none;
+				border-top: 1px solid var(--border);
+				margin: 0 0 2em 0;
 			}
 
 			/* Category filter */
@@ -52,15 +115,15 @@ const posts = (await getCollection('blog')).sort(
 			}
 
 			.filter-btn {
-				padding: 0.35em 0.9em;
+				padding: 0.4em 1em;
 				border-radius: 999px;
 				border: 1px solid var(--border);
 				background: transparent;
 				color: var(--text-light);
 				cursor: pointer;
 				font-size: 0.82em;
-				font-family: "Georgia", serif;
-				font-weight: 400;
+				font-family: var(--font-sans);
+				font-weight: 500;
 				letter-spacing: 0;
 				text-transform: none;
 			}
@@ -87,8 +150,8 @@ const posts = (await getCollection('blog')).sort(
 			.post-item {
 				display: flex;
 				align-items: flex-start;
-				gap: 1.5em;
-				padding: 1.5em 0;
+				gap: 2em;
+				padding: 2em 0;
 				border-bottom: 1px solid var(--border);
 			}
 
@@ -105,11 +168,12 @@ const posts = (await getCollection('blog')).sort(
 				display: flex;
 				align-items: center;
 				gap: 0.6em;
-				margin-bottom: 0.5em;
+				margin-bottom: 0.6em;
 			}
 
 			.post-category {
-				font-size: 0.75em;
+				font-family: var(--font-sans);
+				font-size: 0.72em;
 				font-weight: 600;
 				color: var(--text-light);
 				text-transform: uppercase;
@@ -118,7 +182,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 
 			.post-date {
-				font-size: 0.78em;
+				font-family: var(--font-sans);
+				font-size: 0.76em;
 				color: var(--text-light);
 				opacity: 0.55;
 			}
@@ -129,18 +194,20 @@ const posts = (await getCollection('blog')).sort(
 			}
 
 			.post-title {
-				font-size: 1.15em;
-				font-weight: 600;
+				font-family: var(--font-serif);
+				font-size: 1.42em;
+				font-weight: 700;
 				color: var(--text);
-				line-height: 1.3;
-				margin: 0 0 0.4em 0;
+				line-height: 1.28;
+				margin: 0 0 0.45em 0;
 				letter-spacing: -0.02em;
 			}
 
 			.post-description {
-				font-size: 0.88em;
+				font-family: var(--font-serif);
+				font-size: 1em;
 				color: var(--text-light);
-				line-height: 1.55;
+				line-height: 1.6;
 				margin: 0;
 				opacity: 0.75;
 				display: -webkit-box;
@@ -153,11 +220,12 @@ const posts = (await getCollection('blog')).sort(
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.4em;
-				margin-top: 0.7em;
+				margin-top: 0.9em;
 			}
 
 			.post-tag {
-				font-size: 0.75em;
+				font-family: var(--font-sans);
+				font-size: 0.74em;
 				color: var(--text-light);
 				opacity: 0.6;
 			}
@@ -169,10 +237,10 @@ const posts = (await getCollection('blog')).sort(
 
 			.post-thumb {
 				flex-shrink: 0;
-				width: 110px;
-				height: 74px;
+				width: 130px;
+				height: 90px;
 				object-fit: cover;
-				border-radius: 4px;
+				border-radius: 6px;
 				border: none;
 				filter: grayscale(15%);
 			}
@@ -185,7 +253,7 @@ const posts = (await getCollection('blog')).sort(
 			.post-item a {
 				display: flex;
 				align-items: flex-start;
-				gap: 1.5em;
+				gap: 2em;
 				text-decoration: none;
 				width: 100%;
 			}
@@ -199,13 +267,24 @@ const posts = (await getCollection('blog')).sort(
 			}
 
 			@media (max-width: 560px) {
+				.author {
+					gap: 0.9em;
+				}
+				.author-avatar {
+					width: 52px;
+					height: 52px;
+					font-size: 1.2em;
+				}
+				.author-name {
+					font-size: 1.3em;
+				}
 				.post-thumb {
-					width: 80px;
-					height: 56px;
+					width: 90px;
+					height: 64px;
 				}
 
 				.post-title {
-					font-size: 1em;
+					font-size: 1.2em;
 				}
 
 				.post-description {
@@ -216,10 +295,20 @@ const posts = (await getCollection('blog')).sort(
 	</head>
 	<body>
 		<main>
-			<div class="page-header">
-				<h1 class="page-title">Jack Su's Blog</h1>
-				<p class="page-subtitle">Writing on technology, algorithms, and everything in between.</p>
+			<div class="author">
+				<div class="author-avatar"><img src="/blog-placeholder-about.jpeg" alt="Jack Su" /></div>
+				<div class="author-info">
+					<h1 class="author-name">Jack Su</h1>
+					<p class="author-bio">Writing on technology, algorithms, and everything in between.</p>
+					<div class="author-social">
+						<a href="https://github.com/JackSuuu" target="_blank" rel="noopener">GitHub</a>
+						<a href="https://medium.com/@18922443765jack" target="_blank" rel="noopener">Medium</a>
+						<a href="https://www.instagram.com/jacksuuuuu/" target="_blank" rel="noopener">Instagram</a>
+					</div>
+				</div>
 			</div>
+
+			<hr class="section-divider" />
 
 			<div class="filter-row">
 				<button class="filter-btn active" data-category="all">All</button>

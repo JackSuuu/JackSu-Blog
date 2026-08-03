@@ -22,7 +22,9 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 
 			.back-link {
 				display: inline-block;
-				font-size: 0.85em;
+				font-family: var(--font-sans);
+				font-size: 0.82em;
+				font-weight: 500;
 				color: var(--text-light);
 				opacity: 0.6;
 				margin-bottom: 2.5em;
@@ -35,8 +37,8 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 			}
 
 			.post-header {
-				margin-bottom: 2em;
-				padding-bottom: 1.5em;
+				margin-bottom: 2.5em;
+				padding-bottom: 2em;
 				border-bottom: 1px solid var(--border);
 			}
 
@@ -44,11 +46,12 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 				display: flex;
 				align-items: center;
 				gap: 0.6em;
-				margin-bottom: 0.8em;
+				margin-bottom: 1em;
 			}
 
 			.post-category {
-				font-size: 0.75em;
+				font-family: var(--font-sans);
+				font-size: 0.72em;
 				font-weight: 600;
 				color: var(--text-light);
 				text-transform: uppercase;
@@ -62,30 +65,34 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 			}
 
 			.post-date {
-				font-size: 0.78em;
+				font-family: var(--font-sans);
+				font-size: 0.76em;
 				color: var(--text-light);
 				opacity: 0.55;
 			}
 
 			.post-title {
-				font-size: 2em;
+				font-family: var(--font-serif);
+				font-size: 2.6em;
 				font-weight: 700;
-				line-height: 1.2;
+				line-height: 1.15;
 				letter-spacing: -0.04em;
 				color: var(--text);
-				margin: 0 0 0.5em 0;
+				margin: 0 0 0.4em 0;
 			}
 
 			.post-description {
-				font-size: 1em;
+				font-family: var(--font-serif);
+				font-size: 1.2em;
 				color: var(--text-light);
-				line-height: 1.6;
+				line-height: 1.5;
 				margin: 0;
 				opacity: 0.7;
 			}
 
 			.last-updated {
-				font-size: 0.78em;
+				font-family: var(--font-sans);
+				font-size: 0.76em;
 				font-style: italic;
 				color: var(--text-light);
 				opacity: 0.5;
@@ -93,7 +100,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 			}
 
 			.hero-image {
-				margin-bottom: 2em;
+				margin-bottom: 2.5em;
 			}
 
 			.hero-image img {
@@ -106,21 +113,22 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 
 			.prose {
 				color: var(--text-light);
-				line-height: 1.75;
-				font-size: 1.02em;
+				line-height: 1.8;
+				font-size: 1.12em;
 			}
 
 			.post-tags {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.5em;
-				margin-top: 3em;
-				padding-top: 1.5em;
+				margin-top: 3.5em;
+				padding-top: 2em;
 				border-top: 1px solid var(--border);
 			}
 
 			.post-tag {
-				font-size: 0.78em;
+				font-family: var(--font-sans);
+				font-size: 0.76em;
 				color: var(--text-light);
 				opacity: 0.55;
 			}
@@ -136,7 +144,11 @@ const { title, description, pubDate, updatedDate, heroImage, tags, category } = 
 				}
 
 				.post-title {
-					font-size: 1.5em;
+					font-size: 1.8em;
+				}
+
+				.post-description {
+					font-size: 1.05em;
 				}
 			}
 		</style>

@@ -2,7 +2,7 @@
 	Portfolio-style Blog Theme
 	Matching Jack Su's portfolio aesthetic
 */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
 	--c0: #fafafc;
@@ -28,6 +28,8 @@
 	--shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	--radius: 0.7rem;
 	--filter-01: url(#turbulence-effect);
+	--font-serif: "Georgia", "Times New Roman", serif;
+	--font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,7 +82,7 @@ html {
 }
 
 body {
-	font-family: "Georgia", serif;
+	font-family: var(--font-serif);
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -88,8 +90,8 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--text);
-	font-size: 1.05em;
-	line-height: 1.65;
+	font-size: 1.08em;
+	line-height: 1.75;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -124,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	letter-spacing: -0.05em;
 	font-weight: 500;
-	font-family: "Georgia", serif;
+	font-family: var(--font-serif);
 }
 
 .prose h1, h2, h3, h4, h5, h6 {
@@ -182,7 +184,7 @@ p {
 textarea, input {
 	width: 100%;
 	font-size: 15px;
-	font-family: "Georgia", serif;
+	font-family: var(--font-sans);
 	padding: 12px;
 	background: transparent;
 	border: 3px solid var(--border);
@@ -295,7 +297,7 @@ button, .btn {
 	background-color: var(--text);
 	color: var(--background);
 	border: 3px solid var(--text);
-	font-family: "Georgia", serif;
+	font-family: var(--font-sans);
 	letter-spacing: 0.1em;
 	font-weight: 500;
 	padding: 10px 30px;
