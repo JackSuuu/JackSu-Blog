@@ -73,6 +73,17 @@ main::-webkit-scrollbar {
 	color: white;
 }
 
+@keyframes pageFadeIn {
+	from { opacity: 0; transform: translateY(8px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+body.is-leaving {
+	opacity: 0;
+	transform: translateY(-6px);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
 html {
 	scroll-behavior: smooth;
 	overscroll-behavior-x: auto;
@@ -87,6 +98,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--text);
+	animation: pageFadeIn 0.3s ease forwards;
 	font-size: 1.05em;
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
