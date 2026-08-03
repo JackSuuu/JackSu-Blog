@@ -51,14 +51,20 @@
 	}
 }
 
-/* Hide scrollbar for all elements while maintaining scroll functionality */
+/* Box sizing */
 * {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
 	box-sizing: border-box;
 }
 
-*::-webkit-scrollbar {
+/* Hide scrollbar only on elements that need it, not on html/body */
+pre, .prose, main {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+pre::-webkit-scrollbar,
+.prose::-webkit-scrollbar,
+main::-webkit-scrollbar {
 	display: none;
 }
 
@@ -243,6 +249,7 @@ pre {
 	background: var(--c10);
 	border: 1px solid var(--c9);
 	overflow-x: auto;
+	overscroll-behavior-x: contain;
 }
 
 pre > code {
