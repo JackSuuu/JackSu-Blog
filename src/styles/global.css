@@ -87,6 +87,7 @@ body.is-leaving {
 html {
 	scroll-behavior: smooth;
 	overscroll-behavior-x: auto;
+	background: var(--background);
 }
 
 body {
