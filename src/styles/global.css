@@ -30,24 +30,25 @@
 	--filter-01: url(#turbulence-effect);
 }
 
-:root[data-theme=dark] {
-	--c11: white;
-	--c0: black;
-	--c1: #181816;
-	--c2: #31312c;
-	--c3: #494942;
-	--c8: #c4c4b0;
-	--c9: #dcdcc6;
-	--c10: #f5f5dc;
-	--filter-01: url(#turbulence-effect);
-	
-	--text: var(--c11);
-	--text-light: var(--c8);
-	--background: var(--c0);
-	--background-alt: var(--c1);
-	--accent: var(--c9);
-	--accent-light: var(--c10);
-	--border: var(--c3);
+@media (prefers-color-scheme: dark) {
+	:root {
+		--c11: white;
+		--c0: black;
+		--c1: #181816;
+		--c2: #31312c;
+		--c3: #494942;
+		--c8: #c4c4b0;
+		--c9: #dcdcc6;
+		--c10: #f5f5dc;
+
+		--text: var(--c11);
+		--text-light: var(--c8);
+		--background: var(--c0);
+		--background-alt: var(--c1);
+		--accent: var(--c9);
+		--accent-light: var(--c10);
+		--border: var(--c3);
+	}
 }
 
 /* Hide scrollbar for all elements while maintaining scroll functionality */
@@ -211,16 +212,15 @@ th, td {
 	padding: 12px;
 	border-bottom: 1px solid var(--border);
 	text-align: left;
-	transition: background 0.3s ease;
 }
 
 th {
-	background: #f4f4f4c7;
+	background: var(--background-alt);
 	font-weight: 600;
 }
 
 tr:hover td {
-	background: #f4f4f4c7;
+	background: var(--background-alt);
 }
 
 img {
