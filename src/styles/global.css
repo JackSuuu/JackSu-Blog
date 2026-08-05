@@ -234,7 +234,6 @@ img {
 
 img:hover {
 	filter: grayscale(0%);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 code {
@@ -250,8 +249,10 @@ code {
 pre {
 	padding: 1.5em;
 	border-radius: var(--radius);
-	background: var(--c10);
-	border: 1px solid var(--c9);
+	/* Fixed dark background: Astro's Shiki uses the github-dark theme,
+	   whose tokens are light-colored and need a dark surface in both modes. */
+	background: #181816;
+	border: 1px solid #31312c;
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
 }
@@ -260,7 +261,7 @@ pre > code {
 	all: unset;
 	font-family: 'JetBrains Mono', monospace;
 	font-size: 0.85em;
-	color: var(--c0);
+	color: #fafafc;
 }
 
 blockquote {
