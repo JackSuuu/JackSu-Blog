@@ -2,8 +2,6 @@ backend:
   name: github
   repo: JackSuuu/JackSu-Blog
   branch: main
-  # OAuth relay deployed on Cloudflare Workers (sveltia-cms-auth).
-  base_url: https://jacksu-blog-backend.18922443765jack.workers.dev
 
 site_url: https://jack-su-blog.vercel.app
 display_url: https://jack-su-blog.vercel.app
