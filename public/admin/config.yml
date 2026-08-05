@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: JackSuuu/JackSu-Blog
+  branch: main
+  # OAuth relay deployed on Cloudflare Workers (sveltia-cms-auth).
+  # Replace <YOUR-WORKER-SUBDOMAIN> after you deploy the worker.
+  base_url: https://<YOUR-WORKER-SUBDOMAIN>.workers.dev
+
+site_url: https://jack-su-blog.vercel.app
+display_url: https://jack-su-blog.vercel.app
+
+# Uploaded images are stored in public/uploads and referenced from the site root.
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: blog
+    label: Blog Posts
+    label_singular: Post
+    description: Write and publish articles directly to the repo.
+    folder: src/content/blog
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}  —  {{pubDate}}"
+    sortable_fields: [pubDate, title]
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Publish Date, name: pubDate, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { label: Updated Date, name: updatedDate, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: Hero Image, name: heroImage, widget: image, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - label: Category
+        name: category
+        widget: select
+        required: false
+        options:
+          - Algorithms
+          - Life
+          - Productivity
+          - Academic
+          - Technology
+      - { label: Body, name: body, widget: markdown }
